@@ -2,7 +2,7 @@ import React, { useState }  from 'react'
 import axios from 'axios';
 
 import './login.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Login = ({setLoginUser}) => {
 
     let navigate = useNavigate()
@@ -79,7 +79,7 @@ const Login = ({setLoginUser}) => {
                             </div>
                             <button type="button" className="btn btn-dark" onClick={(login)}>Login</button>
                            <span >
-                            <a href="/register"><button type="button" className="btn btn-dark">Register</button></a>
+                            <Link to="/register"><button type="button" className="btn btn-dark">Register</button></Link>
                            </span>
                         </form>
                     </div>
