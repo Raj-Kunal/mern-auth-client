@@ -34,7 +34,7 @@ const Register = () => {
 
             //  alert('posted')
             //  console.log(user)
-            axios.post("http://localhost:9002/register", user)
+            axios.post(" https://authprocess.herokuapp.com/register", user)
             .then(res => {
                 alert(res.data.message)
                 navigate('/login')
